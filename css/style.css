@@ -93,6 +93,7 @@ main section:nth-child(2) article div:last-child  div + p{
 main section:nth-child(2) article div:last-child  div.info,
 main section:last-child article div:last-child div,info{
     border: 1px solid var(--main-color);
+    flex-wrap: wrap;
 }
 main section:last-child{
     background-color: #25273e;
@@ -116,5 +117,9 @@ main section:last-child article .tall{
     }
     main section:last-child article div:last-child div{
         text-align: left;
+    }
+    main section:nth-child(2) article div:last-child  div.info,
+    main section:last-child article div:last-child div,info{
+        flex-wrap: nowrap;
     }
 }
